@@ -38,7 +38,7 @@
 
 </head>
 <body>
-  <!-- nav section start here -->
+  <!-- nav section start  -->
   <nav>
     <div class="nav-container">
       <div>
@@ -47,14 +47,14 @@
   
       <div class="donate-title">
         <img src="images/donate 1.png" alt="">
-        <h1 class="text-2xl">Donate Bangladesh</h1>
+        <h1 class="text-2xl">Aid Bangladesh</h1>
       </div>
   
   
   
       <div class="money-section">
         <img src="images/Currency.png" alt="">
-        <h1 id="balance">25000 </h1>
+        <h1 id="balance">305000 </h1>
         <h1>BDT</h1>
       </div>
     </div>
@@ -63,25 +63,43 @@
      </div>
   </nav>
 
-<!-- FAQ section start here -->
+<!-- FAQ section start -->
 <div class="join join-vertical w-full">
   <div class="collapse collapse-arrow join-item border-base-300 border">
     <input type="radio" name="my-accordion-4" checked="checked" />
     <div class="collapse-title text-xl font-medium">What is the Document Object model (DOM)?</div>
     <div class="collapse-content">
-      <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+      <p>The DOM (Document Object Model) is a programming interface that represents HTML, XML, or other structured documents as a tree of objects. It provides a way for programs to access and manipulate the structure, style, and content of a document.</p>
     </div>
   </div>
   <div class="collapse collapse-arrow join-item border-base-300 border">
     <input type="radio" name="my-accordion-4" />
     <div class="collapse-title text-xl font-medium">How do you select on element from the DOM?</div>
     <div class="collapse-content">
-      <p>There are some severial select system to select DOM. <br>
-        1. getElementById() <br>
-        2. getElementsByClassName() <br>
-        3. getElementsByTagName() <br>
-        4. querySelector() <br>
-        5. querySelectorAll() <br>
+      <p>Selecting an element from the DOM involves finding the specific element within the document tree based on its unique identifier or properties. There are several common methods to achieve this in JavaScript: <br><br>
+
+        1. By ID: <br><br>
+        
+        Use the getElementById() method to select an element based on its unique ID attribute. <br>
+        const elementById = document.getElementById("myElement");<br>
+        2. By Class Name:  <br><br>
+
+        Use the getElementsByClassName() method to select multiple elements based on their class name. It returns a collection of elements. <br>
+        const elementsByClassName = document.getElementsByClassName("myClass"); <br>
+        3. By Tag Name: <br><br>
+
+        Use the getElementsByTagName() method to select multiple elements based on their tag name. It returns a collection of elements. <br>
+        const elementsByTagName = document.getElementsByTagName("p"); <br><br>
+        4. By Query Selector: <br><br>
+
+        Use the querySelector() method to select a single element based on a CSS selector. It supports a wide range of selectors, including ID, class, tag name, attributes, and more. <br>
+        const elementByQuerySelector = document.querySelector("#myElement.myClass"); <br><br>
+        5. By Query Selector All: <br><br>
+
+        Use the querySelectorAll() method to select multiple elements based on a CSS selector. It returns a collection of elements. <br>
+
+        const elementsByQuerySelectorAll = document.querySelectorAll(".myClass") <br><br>
+
       </p>
     </div>
   </div>
@@ -89,7 +107,14 @@
     <input type="radio" name="my-accordion-4" />
     <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
     <div class="collapse-content">
-      <p>Event delegation is a powerful pattern used to handle DOM events, and it uses event bubbling to improve performance, simplify management, and help maintain code. By using a single listener on a parent element, you can effectively handle events for all child elements, even those that are added later.</p>
+      <p>
+    Event Delegation in the DOM refers to the practice of attaching an event listener to a parent element instead of directly to each child element. This allows you to efficiently handle events for multiple child elements without having to explicitly add listeners to each one. <br><br>
+
+    Why is it useful? <br><br>
+
+    Improved Performance:<br>When dealing with a large number of child elements, adding individual event listeners can significantly impact performance. Event delegation reduces the overhead by only attaching a single listener to the parent element. <br><br>
+    Dynamic Content:<br>If the DOM is dynamically updated (e.g., elements are added or removed), event delegation ensures that new elements automatically inherit the event listener from the parent, without requiring manual updates. <br><br>
+    Simplified Code:<br>By using event delegation, you can write more concise and maintainable code, as you only need to manage a single event listener.</p>
     </div>
     <div class="collapse collapse-arrow join-item border-base-300 border">
       <input type="radio" name="my-accordion-4" />
