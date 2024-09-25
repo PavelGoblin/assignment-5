@@ -26,7 +26,7 @@ const donateMoney=document.getElementById('donate-money').value;
     console.log(donateMoney)
    
 
-// donate korla taka berba 
+// donate and increase money
 document.getElementById('donate-now-btn').addEventListener('click',function(event){
     event.preventDefault();
     const donateAmountt=document.getElementById('donate-amount');
@@ -53,7 +53,7 @@ document.getElementById('donate-now-btn').addEventListener('click',function(even
    
 })
 
-// donate korla taka komba
+// donate and decrease tk
 
 document.getElementById('donate-now-btn').addEventListener('click',function(){
     const amount=document.getElementById('amount');
@@ -101,7 +101,7 @@ document.getElementById('donation').addEventListener('click',function(){
 
 
 
-// History ta joma hoba kottto taka patano holo?
+// History section about money transfer
 document.getElementById('donate-now-btn').addEventListener('click',function(){
     const donateMoney=document.getElementById('donate-money').value;
     const donateMoneyNumber=parseFloat(donateMoney);
@@ -137,10 +137,10 @@ const formattedDate = `${day}/${month}/${year}`; // Format as DD/MM/YYYY
 console.log(`Current Date: ${formattedDate}`);
 
 
-// Doantion two start here
+// Doantion two start 
 
 
-// donate korla taka berba 
+// donate and increase tk
 document.getElementById('donate-now-btn-two').addEventListener('click',function(event){
     event.preventDefault();
     const donateAmountt=document.getElementById('donate-amount-two');
@@ -168,7 +168,7 @@ document.getElementById('donate-now-btn-two').addEventListener('click',function(
 })
 
 
-// donate korla taka komba
+// donate and decrease tk
 
 document.getElementById('donate-now-btn-two').addEventListener('click',function(){
     const amount=document.getElementById('amount');
@@ -193,7 +193,7 @@ document.getElementById('donate-now-btn-two').addEventListener('click',function(
 })
 
 
-// History ta joma hoba kottto taka patano holo?
+// History about money transfer
 document.getElementById('donate-now-btn-two').addEventListener('click',function(){
     const donateMoney=document.getElementById('donate-money-two').value;
     const donateMoneyNumber=parseFloat(donateMoney);
@@ -211,8 +211,8 @@ document.getElementById('donate-now-btn-two').addEventListener('click',function(
 })
 
 
-// donation three start here
-// donate korla taka berba 
+// donation three start 
+// donate and increase tk 
 document.getElementById('donate-now-btn-three').addEventListener('click',function(event){
     event.preventDefault();
     const donateAmountt=document.getElementById('donate-amount-three');
@@ -240,7 +240,7 @@ document.getElementById('donate-now-btn-three').addEventListener('click',functio
 })
 
 
-// donate korla taka komba
+// donate and decrease tk
 
 document.getElementById('donate-now-btn-three').addEventListener('click',function(){
     const amount=document.getElementById('amount');
@@ -265,7 +265,7 @@ document.getElementById('donate-now-btn-three').addEventListener('click',functio
 })
 
 
-// History ta joma hoba kottto taka patano holo?
+// History about money transfer
 document.getElementById('donate-now-btn-three').addEventListener('click',function(){
     const donateMoney=document.getElementById('donate-money-three').value;
     const donateMoneyNumber=parseFloat(donateMoney);
@@ -283,9 +283,9 @@ document.getElementById('donate-now-btn-three').addEventListener('click',functio
 })
 
 
-// donation three end here
-// donation four start here
-// donate korla taka berba 
+// donation four start 
+
+// donate and increase tk
 document.getElementById('donate-now-btn-four').addEventListener('click',function(event){
     event.preventDefault();
     const donateAmountt=document.getElementById('donate-amount-four');
@@ -313,7 +313,7 @@ document.getElementById('donate-now-btn-four').addEventListener('click',function
 })
 
 
-// donate korla taka komba
+// donate and decrease tk
 
 document.getElementById('donate-now-btn-four').addEventListener('click',function(){
     const amount=document.getElementById('amount');
@@ -338,7 +338,7 @@ document.getElementById('donate-now-btn-four').addEventListener('click',function
 })
 
 
-// History ta joma hoba kottto taka patano holo?
+// History about money transfer
 document.getElementById('donate-now-btn-four').addEventListener('click',function(){
     const donateMoney=document.getElementById('donate-money-four').value;
     const donateMoneyNumber=parseFloat(donateMoney);
@@ -356,6 +356,6 @@ document.getElementById('donate-now-btn-four').addEventListener('click',function
 })
 
 
-// donation four end here
+// donation four end 
 
 
